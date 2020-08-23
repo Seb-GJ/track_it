@@ -30,7 +30,7 @@ header{
 .welcome-section {
     
     text-align: center;
-    background-color: #fffbf7;
+    background-color: $bone;
     padding: 50px 0;
 
     h1{
@@ -90,4 +90,58 @@ header{
         }
     }
     
+}
+
+.landing-benefits{
+    background-color: $light-orange;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card{
+        padding: 0 15px;
+        border-radius: 30px;
+        
+        h1{
+            font-size: 25px;
+            color: $general-green;
+        }
+
+        p{
+            color: $grey;
+        }
+
+        .image-container{
+
+            height: 250px;
+
+            img{
+                padding: 20px;
+                border-radius: 30px;
+                height: 100%;
+                
+            }
+        }
+    }
+
+}
+
+.landing-contact{
+
+    background-color: $bone;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: row;
+
+    .contact-form{
+        flex: 2;
+        padding-right: 20px;
+    }
+
+    .partners{    
+        flex: 1;
+        padding-left: 10px;
+        align-items: flex-start;
+    }
 }

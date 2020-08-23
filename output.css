@@ -64,4 +64,47 @@ header form > a {
   margin-top: 20px;
 }
 
+.landing-benefits {
+  background-color: #F9E3D8;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.landing-benefits .card {
+  padding: 0 15px;
+  border-radius: 30px;
+}
+.landing-benefits .card h1 {
+  font-size: 25px;
+  color: #67b54b;
+}
+.landing-benefits .card p {
+  color: #4a4a4a;
+}
+.landing-benefits .card .image-container {
+  height: 250px;
+}
+.landing-benefits .card .image-container img {
+  padding: 20px;
+  border-radius: 30px;
+  height: 100%;
+}
+
+.landing-contact {
+  background-color: #fffbf7;
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: row;
+}
+.landing-contact .contact-form {
+  flex: 2;
+  padding-right: 20px;
+}
+.landing-contact .partners {
+  flex: 1;
+  padding-left: 10px;
+  align-items: flex-start;
+}
+
 /*# sourceMappingURL=output.css.map */
