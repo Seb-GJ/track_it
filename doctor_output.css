@@ -1,0 +1,22 @@
+/* Colores principales */
+.navbar {
+  background-color: #fffbf7;
+}
+
+.table-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+}
+.table-section .doctor-table-title {
+  color: #f90;
+  text-align: center;
+  padding: 15px 0;
+}
+.table-section .detail-table {
+  background-color: #EBF9DA;
+  padding-left: 30px;
+}
+
+/*# sourceMappingURL=doctor_output.css.map */

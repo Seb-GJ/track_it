@@ -1,0 +1,27 @@
+@use 'colors.scss' as *;
+
+.navbar{
+    background-color: $bone;
+}
+
+.table-section{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 300px;
+
+    .doctor-table-title{
+        color: $general-orange;
+        text-align: center;
+        padding: 15px 0;
+
+    }
+
+    .detail-table{
+        background-color: $light-green;
+        padding-left: 30px;
+
+  
+    }
+
+}
