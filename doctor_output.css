@@ -20,13 +20,13 @@
 }
 
 aside .profile {
-  position: absolute;
-  top: 170px;
+  position: fixed;
+  top: 100px;
   left: 50px;
   color: #ffff;
   padding: 10px 20px;
   text-align: center;
-  background-color: black;
+  background-color: blue;
   height: 500px;
   width: 200px;
 }
