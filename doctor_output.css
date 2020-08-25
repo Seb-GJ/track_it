@@ -19,4 +19,16 @@
   padding-left: 30px;
 }
 
+aside .profile {
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  color: #ffff;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: black;
+  height: 500px;
+  width: 200px;
+}
+
 /*# sourceMappingURL=doctor_output.css.map */

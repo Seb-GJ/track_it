@@ -25,3 +25,18 @@
     }
 
 }
+
+aside{
+
+    .profile{
+        position: absolute;
+        top: 170px;
+        left: 50px;
+        color: $white;
+        padding: 10px 20px;
+        text-align: center;
+        background-color: black;
+        height: 500px;
+        width: 200px;
+    }
+}
