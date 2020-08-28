@@ -24,6 +24,14 @@ header{
 
         }
         
+        
+    }
+
+    @media (max-width:500px){
+        display: flex;
+        flex-direction: column;
+        
+
     }
 }
 
@@ -46,6 +54,24 @@ header{
         margin-top: 30px;
         
     }
+
+    @media(max-width: 910px){
+        padding: 10px 10px;
+
+        h1{
+            font-size: 30px;
+            padding-top: 20px;;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        form{
+            width: 80%;
+            padding-left: 30px;
+        }
+    }
 }
 
 .landing-how-it-works{
@@ -53,18 +79,31 @@ header{
     background-color: $light-green;
     display: flex;
     flex-direction: row;
-    
+    padding: 50px 0;
+
+        @media(max-width: 910px){
+            flex-direction: column;
+            padding: 10px 0px;
+
+        }
 
     .landing-hiw-image{
-        height: 400px;
+
         padding: 40px 30px 40px 50px;
         display: flex;
         flex: 1;
         justify-content: flex-start;
 
         & > img{
-           border-radius: 50%;
-           height: 100%;
+            border-radius: 50%;
+           
+           width: 100%;
+           object-fit: contain;
+        }
+
+        @media(max-width: 910px){
+            padding: 20px;
+            height: 200px;
         }
         
     }
@@ -87,6 +126,19 @@ header{
             color: $grey;
             font-size: 20px;
             margin-top: 20px;
+        }
+
+        @media(max-width: 910px){
+            padding: 40px;
+            h2{
+                text-align: center;
+                font-size: 35px;
+            }
+
+            p{
+                text-align: center;
+                font-size: 18px;
+            }
         }
     }
     
@@ -125,23 +177,59 @@ header{
         }
     }
 
+    @media(max-width: 910px){
+        padding: 20px 30px;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+        .card{
+            height: 30px;
+
+            h1{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+
+
+    }
+
 }
 
 .landing-contact{
 
     background-color: $bone;
-    padding: 50px 200px;
+    padding: 50px 100px;
     display: flex;
     flex-direction: row;
 
     .contact-form{
         flex: 2;
         padding-right: 20px;
+        width: 80%;
     }
 
     .partners{    
         flex: 1;
         padding-left: 10px;
         align-items: flex-start;
+     
+        
     }
+
+    @media (max-width:910px){
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .partners{
+            margin-top: 20px;
+        }
+    }
+
 }
+

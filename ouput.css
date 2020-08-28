@@ -13,12 +13,6 @@ header form > a {
   color: #67b54b;
   text-decoration: none;
 }
-@media (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .welcome-section {
   text-align: center;
@@ -35,36 +29,20 @@ header form > a {
   color: #4a4a4a;
   margin-top: 30px;
 }
-@media (max-width: 910px) {
-  .welcome-section {
-    padding: 10px 10px;
-  }
-  .welcome-section h1 {
-    font-size: 30px;
-    padding-top: 20px;
-  }
-  .welcome-section p {
-    font-size: 18px;
-  }
-  .welcome-section form {
-    width: 80%;
-    padding-left: 30px;
-  }
-}
 
 .landing-how-it-works {
   background-color: #EBF9DA;
   display: flex;
   flex-direction: row;
-  padding: 50px 0;
 }
-@media (max-width: 910px) {
+@media (max-width: 600px) {
   .landing-how-it-works {
     flex-direction: column;
-    padding: 10px 0px;
+    background-color: blue;
   }
 }
 .landing-how-it-works .landing-hiw-image {
+  height: 400px;
   padding: 40px 30px 40px 50px;
   display: flex;
   flex: 1;
@@ -72,14 +50,7 @@ header form > a {
 }
 .landing-how-it-works .landing-hiw-image > img {
   border-radius: 50%;
-  width: 100%;
-  object-fit: contain;
-}
-@media (max-width: 910px) {
-  .landing-how-it-works .landing-hiw-image {
-    padding: 20px;
-    height: 200px;
-  }
+  height: 100%;
 }
 .landing-how-it-works .landing-hiw-content {
   display: flex;
@@ -97,19 +68,6 @@ header form > a {
   color: #4a4a4a;
   font-size: 20px;
   margin-top: 20px;
-}
-@media (max-width: 910px) {
-  .landing-how-it-works .landing-hiw-content {
-    padding: 40px;
-  }
-  .landing-how-it-works .landing-hiw-content h2 {
-    text-align: center;
-    font-size: 35px;
-  }
-  .landing-how-it-works .landing-hiw-content p {
-    text-align: center;
-    font-size: 18px;
-  }
 }
 
 .landing-benefits {
@@ -138,49 +96,21 @@ header form > a {
   border-radius: 30px;
   height: 100%;
 }
-@media (max-width: 910px) {
-  .landing-benefits {
-    padding: 20px 30px;
-    display: grid;
-    grid-template-columns: repeat(1fr);
-  }
-  .landing-benefits .card {
-    height: 30px;
-  }
-  .landing-benefits .card h1 {
-    font-size: 20px;
-  }
-  .landing-benefits .card p {
-    font-size: 15px;
-  }
-}
 
 .landing-contact {
   background-color: #fffbf7;
-  padding: 50px 100px;
+  padding: 50px 200px;
   display: flex;
   flex-direction: row;
 }
 .landing-contact .contact-form {
   flex: 2;
   padding-right: 20px;
-  width: 80%;
 }
 .landing-contact .partners {
   flex: 1;
   padding-left: 10px;
   align-items: flex-start;
 }
-@media (max-width: 910px) {
-  .landing-contact {
-    margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  .landing-contact .partners {
-    margin-top: 20px;
-  }
-}
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=ouput.css.map */
