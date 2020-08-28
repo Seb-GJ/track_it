@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["scss/colors.scss","scss/doctor.scss"],"names":[],"mappings":"AAAA;ACEA;EACI,kBDII;;;ACDR;EACI;EACA;EACA;EACA;;AAEA;EACI,ODXS;ECYT;EACA;;AAIJ;EACI,kBDdM;ECeN;;;AASJ;EAEI;EACA;EACA;EACA,OD3BA;EC4BA;EACA;EACA;EACA;EACA","file":"doctor_output.css"}
