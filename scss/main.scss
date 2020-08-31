@@ -1,0 +1,252 @@
+@use "colors" as *;
+
+
+header{
+
+    .navbar{
+        width: 100%;
+        padding: 40px 40px;
+
+        .navbar-brand{
+            font-weight: bold;
+        }
+    }
+
+    form{
+
+        & > button {
+            margin-left: 15px;
+        }
+
+        & > a {
+            color: #67b54b;
+            text-decoration: none;
+
+        }
+        
+        
+    }
+
+    @media (max-width:500px){
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+}
+
+.welcome-section {
+    
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(images/welcomeSection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    h1{
+        font-size: 40px;
+        padding-top: 50px;
+        color: $white;
+        
+    }
+
+    p{
+
+        font-size: 20px;
+        color: $grey;
+        margin-top: 30px;
+        color: $bone;
+        
+    }
+
+}
+
+
+.landing-how-it-works{
+    background-color: $light-green;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+}
+
+    .landing-hiw-image{
+
+        padding: 40px 30px 40px 50px;
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+
+        & > img{
+            border-radius: 50%;
+           
+           width: 100%;
+           object-fit: contain;
+        }
+        
+    }
+
+    .landing-hiw-content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 2;
+        padding-left: 100px;
+        padding-right: 80px;
+        padding-top: 50px;
+
+        h2{
+            color: $general-orange;
+        }
+
+        p{
+            color: $grey;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+    
+}
+
+.landing-benefits{
+    background-color: $light-orange;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card{
+        padding: 0 15px;
+        border-radius: 30px;
+        
+        h1{
+            font-size: 25px;
+            color: $general-green;
+        }
+
+        p{
+            color: $grey;
+        }
+
+        .image-container{
+
+            height: 250px;
+
+            img{
+                padding: 20px;
+                border-radius: 30px;
+                height: 100%;
+                
+            }
+        }
+    }
+
+ 
+
+}
+
+.landing-contact{
+
+    background-color: $bone;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+
+    .contact-form{
+        flex: 2;
+        padding-right: 20px;
+        width: 80%;
+    }
+
+    .partners{    
+        flex: 1;
+        padding-left: 10px;
+        align-items: flex-start;
+     
+        
+    }
+
+
+
+}
+
+@media (max-width:910px){
+
+    .welcome-section{
+        padding: 80px 10px;
+
+        h1{
+            font-size: 30px;
+            padding-top: 20px;;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        form{
+            width: 80%;
+            padding-left: 30px;
+        }   
+    }
+
+    .landing-how-it-works{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+   
+    .landing-hiw-image{
+        padding: 20px;
+        height: 200px;
+        
+    }
+  
+    .landing-hiw-content{
+
+    padding: 40px;
+
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
+   }
+
+    .landing-contact{
+
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .partners{
+            margin-top: 20px;
+        }
+    }
+
+    .landing-benefits{
+            padding: 20px 30px;
+            display: grid;
+            grid-template-columns: repeat(1fr);
+    
+            .card{
+                height: 30px;
+    
+                h1{
+                    font-size: 20px;
+                }
+    
+                p{
+                    font-size: 15px;
+                }
+            } 
+    }
+
+}
+
