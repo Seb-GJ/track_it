@@ -38,13 +38,18 @@ header{
 .welcome-section {
     
     text-align: center;
-    background-color: $bone;
     padding: 50px 0;
+    background-image: url(images/welcomeSection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 
     h1{
         font-size: 40px;
         padding-top: 50px;
-        color: $general-orange;
+        color: $white;
+        
     }
 
     p{
@@ -52,40 +57,19 @@ header{
         font-size: 20px;
         color: $grey;
         margin-top: 30px;
+        color: $bone;
         
     }
 
-    @media(max-width: 910px){
-        padding: 10px 10px;
-
-        h1{
-            font-size: 30px;
-            padding-top: 20px;;
-        }
-
-        p{
-            font-size: 18px;
-        }
-
-        form{
-            width: 80%;
-            padding-left: 30px;
-        }
-    }
 }
 
-.landing-how-it-works{
 
+.landing-how-it-works{
     background-color: $light-green;
     display: flex;
     flex-direction: row;
     padding: 50px 0;
-
-        @media(max-width: 910px){
-            flex-direction: column;
-            padding: 10px 0px;
-
-        }
+}
 
     .landing-hiw-image{
 
@@ -99,11 +83,6 @@ header{
            
            width: 100%;
            object-fit: contain;
-        }
-
-        @media(max-width: 910px){
-            padding: 20px;
-            height: 200px;
         }
         
     }
@@ -128,19 +107,6 @@ header{
             margin-top: 20px;
         }
 
-        @media(max-width: 910px){
-            padding: 40px;
-            h2{
-                text-align: center;
-                font-size: 35px;
-            }
-
-            p{
-                text-align: center;
-                font-size: 18px;
-            }
-        }
-    }
     
 }
 
@@ -177,25 +143,7 @@ header{
         }
     }
 
-    @media(max-width: 910px){
-        padding: 20px 30px;
-        display: grid;
-        grid-template-columns: repeat(1fr);
-
-        .card{
-            height: 30px;
-
-            h1{
-                font-size: 20px;
-            }
-
-            p{
-                font-size: 15px;
-            }
-        }
-
-
-    }
+ 
 
 }
 
@@ -220,7 +168,58 @@ header{
         
     }
 
-    @media (max-width:910px){
+
+
+}
+
+@media (max-width:910px){
+
+    .welcome-section{
+        padding: 80px 10px;
+
+        h1{
+            font-size: 30px;
+            padding-top: 20px;;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        form{
+            width: 80%;
+            padding-left: 30px;
+        }   
+    }
+
+    .landing-how-it-works{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+   
+    .landing-hiw-image{
+        padding: 20px;
+        height: 200px;
+        
+    }
+  
+    .landing-hiw-content{
+
+    padding: 40px;
+
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
+   }
+
+    .landing-contact{
+
         margin-top: 20px;
         padding: 10px;
         display: flex;
@@ -229,6 +228,24 @@ header{
         .partners{
             margin-top: 20px;
         }
+    }
+
+    .landing-benefits{
+            padding: 20px 30px;
+            display: grid;
+            grid-template-columns: repeat(1fr);
+    
+            .card{
+                height: 30px;
+    
+                h1{
+                    font-size: 20px;
+                }
+    
+                p{
+                    font-size: 15px;
+                }
+            } 
     }
 
 }
