@@ -41,49 +41,17 @@ header form > a {
   color: #fffbf7;
 }
 
-.landing-how-it-works {
-  background-color: #EBF9DA;
-  display: flex;
-  flex-direction: row;
-  padding: 50px 0;
-}
-
-.landing-hiw-image {
-  padding: 40px 30px 40px 50px;
-  display: flex;
-  flex: 1;
-  justify-content: flex-start;
-}
-.landing-hiw-image > img {
-  border-radius: 50%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.landing-hiw-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 2;
-  padding-left: 100px;
-  padding-right: 80px;
-  padding-top: 50px;
-}
-.landing-hiw-content h2 {
-  color: #f90;
-}
-.landing-hiw-content p {
-  color: #4a4a4a;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
 .landing-benefits {
-  background-color: #F9E3D8;
+  background: linear-gradient(45deg, #67b54b, #D87359);
+  opacity: 0.9;
   padding: 50px 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.landing-benefits h2 {
+  color: #ffff;
+  padding-bottom: 50px;
 }
 .landing-benefits .card {
   padding: 0 15px;
@@ -108,8 +76,8 @@ header form > a {
 .landing-contact {
   background-color: #fffbf7;
   padding: 50px 100px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
 }
 .landing-contact .contact-form {
   flex: 2;
@@ -138,28 +106,6 @@ header form > a {
     padding-left: 30px;
   }
 
-  .landing-how-it-works {
-    flex-direction: column;
-    padding: 10px 0px;
-  }
-
-  .landing-hiw-image {
-    padding: 20px;
-    height: 200px;
-  }
-
-  .landing-hiw-content {
-    padding: 40px;
-  }
-  .landing-hiw-content h2 {
-    text-align: center;
-    font-size: 35px;
-  }
-  .landing-hiw-content p {
-    text-align: center;
-    font-size: 18px;
-  }
-
   .landing-contact {
     margin-top: 20px;
     padding: 10px;
@@ -183,6 +129,9 @@ header form > a {
   }
   .landing-benefits .card p {
     font-size: 15px;
+  }
+  .landing-benefits .card .image-container {
+    display: none;
   }
 }
 

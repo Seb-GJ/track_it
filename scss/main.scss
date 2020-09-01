@@ -64,58 +64,19 @@ header{
 }
 
 
-.landing-how-it-works{
-    background-color: $light-green;
-    display: flex;
-    flex-direction: row;
-    padding: 50px 0;
-}
-
-    .landing-hiw-image{
-
-        padding: 40px 30px 40px 50px;
-        display: flex;
-        flex: 1;
-        justify-content: flex-start;
-
-        & > img{
-            border-radius: 50%;
-           
-           width: 100%;
-           object-fit: contain;
-        }
-        
-    }
-
-    .landing-hiw-content{
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 2;
-        padding-left: 100px;
-        padding-right: 80px;
-        padding-top: 50px;
-
-        h2{
-            color: $general-orange;
-        }
-
-        p{
-            color: $grey;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-    
-}
-
 .landing-benefits{
-    background-color: $light-orange;
+    background: linear-gradient(45deg, $general-green, #D87359);
+    opacity: .9;
     padding: 50px 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    h2{
+
+        color: $white;
+        padding-bottom: 50px;
+    }
 
     .card{
         padding: 0 15px;
@@ -151,8 +112,8 @@ header{
 
     background-color: $bone;
     padding: 50px 100px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
 
     .contact-form{
         flex: 2;
@@ -192,31 +153,7 @@ header{
         }   
     }
 
-    .landing-how-it-works{
-        flex-direction: column;
-        padding: 10px 0px;
-    }
-   
-    .landing-hiw-image{
-        padding: 20px;
-        height: 200px;
-        
-    }
-  
-    .landing-hiw-content{
-
-    padding: 40px;
-
-        h2{
-            text-align: center;
-            font-size: 35px;
-        }
-
-        p{
-            text-align: center;
-            font-size: 18px;
-        }
-   }
+    
 
     .landing-contact{
 
@@ -244,6 +181,10 @@ header{
     
                 p{
                     font-size: 15px;
+                }
+
+                .image-container{
+                    display: none;
                 }
             } 
     }
