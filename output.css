@@ -5,6 +5,7 @@ header .navbar {
 }
 header .navbar .navbar-brand {
   font-weight: bold;
+  font-size: 25px;
 }
 header form > button {
   margin-left: 15px;
@@ -30,12 +31,12 @@ header form > a {
   height: 500px;
 }
 .welcome-section h1 {
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 50px;
   color: #ffff;
 }
 .welcome-section p {
-  font-size: 20px;
+  font-size: 25px;
   color: #4a4a4a;
   margin-top: 30px;
   color: #fffbf7;
@@ -49,7 +50,7 @@ header form > a {
   flex-direction: row;
   align-items: center;
 }
-.landing-benefits h2 {
+.landing-benefits h1 {
   color: #ffff;
   padding-bottom: 50px;
 }
@@ -60,6 +61,7 @@ header form > a {
 .landing-benefits .card h1 {
   font-size: 25px;
   color: #67b54b;
+  padding-bottom: 0px;
 }
 .landing-benefits .card p {
   color: #4a4a4a;
@@ -77,19 +79,33 @@ header form > a {
   background-color: #fffbf7;
   padding: 50px 50px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .landing-contact .contact-form {
   padding-right: 30px;
   width: 100%;
 }
+.landing-contact .contact-form h1 {
+  color: #111111;
+}
 .landing-contact .partners {
-  padding-left: 40px;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 0.05fr 1fr;
+}
+.landing-contact .partners h1 {
+  margin-bottom: 50px;
+  color: #111111;
 }
 .landing-contact .partners .partners-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.landing-contact .partners .partners-container img {
+  width: 80%;
 }
 
 @media (max-width: 910px) {

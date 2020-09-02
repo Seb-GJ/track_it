@@ -9,6 +9,7 @@ header{
 
         .navbar-brand{
             font-weight: bold;
+            font-size: 25px;
         }
     }
 
@@ -46,7 +47,7 @@ header{
     height: 500px;
 
     h1{
-        font-size: 40px;
+        font-size: 50px;
         padding-top: 50px;
         color: $white;
         
@@ -54,7 +55,7 @@ header{
 
     p{
 
-        font-size: 20px;
+        font-size: 25px;
         color: $grey;
         margin-top: 30px;
         color: $bone;
@@ -72,7 +73,7 @@ header{
     flex-direction: row;
     align-items: center;
 
-    h2{
+    h1{
 
         color: $white;
         padding-bottom: 50px;
@@ -85,6 +86,7 @@ header{
         h1{
             font-size: 25px;
             color: $general-green;
+            padding-bottom: 0px;
         }
 
         p{
@@ -113,24 +115,42 @@ header{
     background-color: $bone;
     padding: 50px 50px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    
 
     .contact-form{
         
         padding-right: 30px;
         width: 100%;
+
+        h1{
+
+            color: #111111;
+
+        }
     }
 
     .partners{    
-        
-        padding-left: 40px;
+        display: grid;
+        text-align: center;
+        grid-template-rows: .05fr 1fr;
+        h1{
+            margin-bottom: 50px;
+            color: #111111;
+
+        }
         
         .partners-container{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
 
-
+            img{
+                width: 80%;
+                
+            }
         }
      
         

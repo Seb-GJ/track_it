@@ -5,13 +5,29 @@
     
 }
 
-
-
-
 header form a:hover{
     color: #67b54b;
     text-decoration: none;
 }
 
+h1{
+    font-family: 'Overlock', cursive;
+}
+
+p{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px; 
+    
+}
+
+a{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+
+button{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px; 
+}
 
 
