@@ -1,4 +1,9 @@
 /* Colores principales */
+p {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 20px;
+}
+
 header .navbar {
   width: 100%;
   padding: 40px 40px;
